@@ -69,7 +69,7 @@ export const openNearbyChest = async (
     };
     await asyncwrap({func: navigateToLocationFunc, setStatsData, getStatsData});
 
-    // check for cancelation signal
+    // check for cancellation signal
     if (isSignalAborted(signal)) {
       return bot.emit(
         'alteraBotEndObservation',

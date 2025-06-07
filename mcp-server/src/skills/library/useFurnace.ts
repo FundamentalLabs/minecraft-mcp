@@ -253,7 +253,7 @@ export const useFurnace = async (
       getStatsData,
       setStatsData,
     });
-    // force the bot to look at as occassionally the bot will not look at the even after pathing
+    // force the bot to look at as occasionally the bot will not look at the even after pathing
     bot.lookAt(furnaceBlock.position.offset(0.5, 0.5, 0.5));
     console.log(
       `You are looking at the furnace at ${Math.floor(furnaceBlock.position.x)}, ${Math.floor(furnaceBlock.position.y)}, ${Math.floor(furnaceBlock.position.z)}.`,

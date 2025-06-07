@@ -53,7 +53,7 @@ export const findExplorableChunk = (
       let newCost = costSoFar[currentKey] + 1; // Assume the cost between any two neighbors is 1
 
       // Add the difference in elevation to the cost
-      // This is to make the bot prefer chunks that are closer to its current elevation, increaing its ability to explore farther.
+      // This is to make the bot prefer chunks that are closer to its current elevation, increasing its ability to explore farther.
       const y_difference = Math.abs(next.y - currentChunk.y);
       newCost += y_difference * ELEVATION_DIFFERENCE_WEIGHT;
 

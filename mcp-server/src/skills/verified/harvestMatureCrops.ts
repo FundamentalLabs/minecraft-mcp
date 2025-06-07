@@ -140,7 +140,7 @@ const harvestCrops = async (
       if (block) {
         const goal = new GoalNear(pos.x, pos.y, pos.z, 1);
         const result = cancelableMove(bot, { goal, signal });
-        // check for cancelation signal
+        // check for cancellation signal
         if (isSignalAborted(signal)) {
           return bot.emit(
             'alteraBotEndObservation',

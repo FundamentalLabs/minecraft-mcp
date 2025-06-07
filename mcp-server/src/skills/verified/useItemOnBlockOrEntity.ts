@@ -242,7 +242,7 @@ export const useItemOnEntity = async (
 
   return bot.emit(
     'alteraBotEndObservation',
-    `You have successfuly finished using ${itemName} on ${entityName}.`,
+    `You have successfully finished using ${itemName} on ${entityName}.`,
   );
 };
 
@@ -329,7 +329,7 @@ export const useItemOnBlock = async (
 
   return bot.emit(
     'alteraBotEndObservation',
-    `You have successfuly finished using ${itemName} on ${blockName}.`,
+    `You have successfully finished using ${itemName} on ${blockName}.`,
   );
 };
 
